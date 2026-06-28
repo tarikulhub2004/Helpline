@@ -39,7 +39,7 @@
 
 
     <section class="p-8 flex justify-between">
-        <div class="grid grid-cols-3 gap-9">
+        <div class="grid grid-cols-3 gap-9" id="history-btn">
 
             <!-- National Emergency Number -->
             <div class="w-[436px] p-6 bg-white rounded-xl">
@@ -134,7 +134,7 @@
                     <div class="mt-6">
                         <button class="btn w-[182px] h-[40px] rounded-xl bg-white" id="copy-ambulance"> <i class="fa-regular fa-copy"></i>
                             Copy</button>
-                        <button class="btn w-[182px] h-[40px] rounded-xl ml-3 bg-green-600 text-white"> <i
+                        <button class="btn w-[182px] h-[40px] rounded-xl ml-3 bg-green-600 text-white" id="ambulance-call"> <i
                                 class="fa-solid fa-phone"></i> Call</button>
                     </div>
                 </div>
@@ -266,17 +266,12 @@
         <div class="w-[400px] h-[1140px] bg-white p-6">
             <div class="flex justify-between items-center">
                 <h1 class="font-semibold"> <i class="fa-solid fa-clock-rotate-left text-gray-500"></i> Call History</h1>
-                <button class="btn w-[100px] rounded-xl bg-green-600 text-white">Clear</button>
+                <button class="btn w-[100px] rounded-xl bg-green-600 text-white" id="clear-btn">Clear</button>
             </div>
 
-            <div class="history-container mt-5">
-                <div class="flex justify-between p-[16px] items-center bg-[#fafafa] rounded-xl mt-5">
-                    <div class="">
-                        <h1 class="font-semibold text-[18px]">Fire Service Number</h1>
-                        <p class="text-18px text-gray-500">999</p>
-                    </div>
-                    <p>11:36:58 AM</p>
-                </div>
+            <div class="mt-5" id="history-container">
+                
+
             </div>
         </div>
     </section>
