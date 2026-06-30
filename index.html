@@ -14,12 +14,12 @@
 </head>
 
 <body class="bg-[#F5FFF6]">
-    <nav class="flex justify-between items-center px-20 py-[20px] text-[#006747] font-extrabold text-[18px] bg-white">
-        <div class="flex items-center">
+    <nav class="flex justify-between lg:items-center lg:px-20 px-3 py-[20px] text-[#006747] font-extrabold text-[18px] bg-white">
+        <div class="lg:flex lg:items-center items-start">
             <img src="assets/logo.png" alt="" class="w-[50px] mr-3">
             <p>Emergancy <br> Service</p>
         </div>
-        <div class="">
+        <div class="grid lg:grid-cols-3 gap-2">
             <button class="btn btn-active rounded-3xl bg-[#41ff6b1a] border-none px-8"><span id="heart">0</span> <img
                     class="w-[20px]" src="assets/heart.png" alt=""></button>
             <button class="btn btn-active rounded-3xl bg-[#41ff6b1a] border-none"><span id="coin">100</span> <img
@@ -29,7 +29,7 @@
     </nav>
 
     <section class="head-line bg-gradient-to-r from-[#013223] via-[#006747] to-[#013223]">
-        <div class="flex flex-col items-center py-5">
+        <div class="flex flex-col lg:items-center py-5">
             <img class="w-[82px]" src="assets/logo-dark.png" alt="">
             <h1 class="text-white font-bold text-[40px]">Emergency Service Directory</h1>
             <p class="text-white font-semibold text-[20px]">Government Emergency Services at Your Fingertip – A Project
@@ -38,8 +38,8 @@
     </section>
 
 
-    <section class="p-8 flex justify-between">
-        <div class="grid grid-cols-3 gap-9" id="history-btn">
+    <section class="p-8 flex flex-col lg:flex-row lg:justify-between">
+        <div class="grid lg:grid-cols-3 gap-9 mb-3" id="history-btn">
 
             <!-- National Emergency Number -->
             <div class="w-[436px] p-6 bg-white rounded-xl">
@@ -263,7 +263,7 @@
         </div>
 
 
-        <div class="w-[400px] h-[1140px] bg-white p-6">
+        <div class="w-[400px] h-[1140px] bg-white p-6 mb-3">
             <div class="flex justify-between items-center">
                 <h1 class="font-semibold"> <i class="fa-solid fa-clock-rotate-left text-gray-500"></i> Call History</h1>
                 <button class="btn w-[100px] rounded-xl bg-green-600 text-white" id="clear-btn">Clear</button>
